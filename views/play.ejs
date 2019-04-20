@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Music Player</title>
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="./client/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<div class="Title">
+			<label id="SongTitle"></label>
+		</div>
+		<div class="audio0">
+                    <audio playsinline id="audio1" preload controls>Your browser does not support HTML5 Audio! рџў</audio>
+        </div>
+        <div class="audio-player">
+            <button class="play"><i class="ion-play"></i></button>
+            <div class="seek-bar">
+                <div class="fill"></div>
+                <div class="handle"></div>
+            </div>
+			<a class="btnPrev" id="btnPrev">&larr;</a><a class="btnNext" id="btnNext">&rarr;</a>
+        </div>
+		
+        <script src="./client/music-player.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<form name='loginform'>
+    <div class="form-group">
+        <label>Login:</label>
+        <input type="text" class="form-control" name="username" required>
+		<input type="password" class="form-control" name="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg" formmethod="post" formaction="/login">Login</button>
+	<script>function checkAndSubmit(){
+		}</script>
+</form>
+<form name='registerform' onsubmit="checkAndSubmit()">
+    <div class="form-group">
+		<label>Register:</label>
+        <input type="text" class="form-control" name="register_username" id="register_login" required>
+		<input type="password" class="form-control" name="register_password" id="register_password" required>
+		<input type="password" class="form-control" name="register_password_retry" id="register_password_retry" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg" formmethod="post" formaction="/register">Register</button>
+	<script>function checkAndSubmit(){
+			var log = document.getElementById('register_login').value;
+			var pass = document.getElementById('register_password').value;
+			var passr = document.getElementById('register_password_retry').value;
+			if(log.length < 6){
+				alert('Login should be longer than 5 symbols.');
+				return false;
+			}
+			if(pass.length < 6){
+				alert('Password should be longer than 5 symbols.');
+				return false;
+			}
+			if(passr!==pass){
+				alert("Fields password and retry password don't match.");
+				return false;
+			}
+			return true;
+		}</script>
+</form>

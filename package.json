@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "node tube-music-app.js"
+  },
+  "name": "tube-music-app",
+  "version": "0.8.0",
+  "main": "tube-music-app.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sqlite3": "^4.0.2",
+    "superagent": "^4.0.0-beta.5",
+    "uuid": "^3.3.2",
+    "youtube-audio-stream": "^0.0.50",
+    "ytdl-core": "^0.20.4"
+  }
+}

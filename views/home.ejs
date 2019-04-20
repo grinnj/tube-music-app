@@ -1,0 +1,16 @@
+<form>
+	<button type="submit" class="btn btn-primary btn-lg" formmethod="get" formaction="/logout">Log out</button>
+    <div class="form-group">
+        <input type="text" class="form-control" name="playlistUrl"><button type="submit" class="btn btn-primary btn-lg" formmethod="post" formaction="/newPlaylist">Load new playlist</button>
+    </div>
+	<a href='./play'>
+                <<< Go to player >>>
+            </a>
+	<% for(var i=0; i<links.length; i++) { %>
+        <li>
+            <a href='<%= links[i].url %>'>
+                <%= links[i].name %>
+            </a>
+        </li>
+    <% } %>
+</form>
